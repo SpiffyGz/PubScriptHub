@@ -1,0 +1,299 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local HubFrame = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local MainFrame_2 = Instance.new("TextButton")
+local HoodModded = Instance.new("TextButton")
+local PhantomForces = Instance.new("TextButton")
+local PhantomForcesFrame = Instance.new("Frame")
+local Ehub = Instance.new("TextButton")
+local Nexuscc = Instance.new("TextButton")
+local DarkHub = Instance.new("TextButton")
+local ProjectEvo = Instance.new("TextButton")
+local HoodModdedFrame = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+HubFrame.Name = "HubFrame"
+HubFrame.Parent = ScreenGui
+HubFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+HubFrame.BackgroundTransparency = 0.600
+HubFrame.Position = UDim2.new(0.386203766, 0, 0.227581054, 0)
+HubFrame.Size = UDim2.new(0, 600, 0, 400)
+HubFrame.Active = true
+HubFrame.Draggable = true
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = HubFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.0500000007, 0, 0.075000003, 0)
+MainFrame.Size = UDim2.new(0, 541, 0, 275)
+
+ImageLabel.Parent = MainFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0369685777, 0, 0.0763635263, 0)
+ImageLabel.Size = UDim2.new(0, 150, 0, 150)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0369685777, 0, 0.672727287, 0)
+TextLabel.Size = UDim2.new(0, 150, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made By spiffyL#0173"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 18.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.378927916, 0, 0.072727263, 0)
+TextLabel_2.Size = UDim2.new(0, 316, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Welcome, this script hub is currently in beta, please be patient until full release."
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 18.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = MainFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.378927916, 0, 0.672727227, 0)
+TextLabel_3.Size = UDim2.new(0, 316, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Toggle key: J=Open K=Close"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 18.000
+TextLabel_3.TextWrapped = true
+
+MainFrame_2.Name = "MainFrame"
+MainFrame_2.Parent = HubFrame
+MainFrame_2.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+MainFrame_2.BorderSizePixel = 0
+MainFrame_2.Position = UDim2.new(0.0500000007, 0, 0.797500014, 0)
+MainFrame_2.Size = UDim2.new(0, 170, 0, 50)
+MainFrame_2.Font = Enum.Font.FredokaOne
+MainFrame_2.Text = "Main"
+MainFrame_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame_2.TextSize = 30.000
+MainFrame_2.TextWrapped = true
+
+HoodModded.Name = "HoodModded"
+HoodModded.Parent = HubFrame
+HoodModded.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+HoodModded.BorderSizePixel = 0
+HoodModded.Position = UDim2.new(0.666666687, 0, 0.797500014, 0)
+HoodModded.Size = UDim2.new(0, 170, 0, 50)
+HoodModded.Font = Enum.Font.FredokaOne
+HoodModded.Text = "HoodModded"
+HoodModded.TextColor3 = Color3.fromRGB(255, 255, 255)
+HoodModded.TextSize = 30.000
+HoodModded.TextWrapped = true
+
+PhantomForces.Name = "PhantomForces"
+PhantomForces.Parent = HubFrame
+PhantomForces.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+PhantomForces.BorderSizePixel = 0
+PhantomForces.Position = UDim2.new(0.358333349, 0, 0.797500014, 0)
+PhantomForces.Size = UDim2.new(0, 170, 0, 50)
+PhantomForces.Font = Enum.Font.FredokaOne
+PhantomForces.Text = "PhantomForces"
+PhantomForces.TextColor3 = Color3.fromRGB(255, 255, 255)
+PhantomForces.TextSize = 26.000
+
+PhantomForcesFrame.Name = "PhantomForcesFrame"
+PhantomForcesFrame.Parent = HubFrame
+PhantomForcesFrame.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+PhantomForcesFrame.BorderSizePixel = 0
+PhantomForcesFrame.Position = UDim2.new(0.0500000007, 0, 0.075000003, 0)
+PhantomForcesFrame.Size = UDim2.new(0, 541, 0, 275)
+PhantomForcesFrame.Visible = false
+
+Ehub.Name = "Ehub"
+Ehub.Parent = PhantomForcesFrame
+Ehub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ehub.BorderSizePixel = 0
+Ehub.Position = UDim2.new(0.0369685888, 0, 0.0581818148, 0)
+Ehub.Size = UDim2.new(0, 165, 0, 50)
+Ehub.Font = Enum.Font.FredokaOne
+Ehub.Text = "Ehub"
+Ehub.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ehub.TextSize = 30.000
+Ehub.TextWrapped = true
+
+Nexuscc.Name = "Nexus.cc"
+Nexuscc.Parent = PhantomForcesFrame
+Nexuscc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Nexuscc.BorderSizePixel = 0
+Nexuscc.Position = UDim2.new(0.656192303, 0, 0.0581818223, 0)
+Nexuscc.Size = UDim2.new(0, 165, 0, 50)
+Nexuscc.Font = Enum.Font.FredokaOne
+Nexuscc.Text = "Nexus.cc"
+Nexuscc.TextColor3 = Color3.fromRGB(0, 0, 0)
+Nexuscc.TextSize = 30.000
+Nexuscc.TextWrapped = true
+
+DarkHub.Name = "DarkHub"
+DarkHub.Parent = PhantomForcesFrame
+DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.BorderSizePixel = 0
+DarkHub.Position = UDim2.new(0.0369686186, 0, 0.407272726, 0)
+DarkHub.Size = UDim2.new(0, 165, 0, 50)
+DarkHub.Font = Enum.Font.FredokaOne
+DarkHub.Text = "DarkHub"
+DarkHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkHub.TextSize = 30.000
+DarkHub.TextWrapped = true
+
+ProjectEvo.Name = "ProjectEvo"
+ProjectEvo.Parent = PhantomForcesFrame
+ProjectEvo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProjectEvo.BorderSizePixel = 0
+ProjectEvo.Position = UDim2.new(0.656192243, 0, 0.407272726, 0)
+ProjectEvo.Size = UDim2.new(0, 165, 0, 50)
+ProjectEvo.Font = Enum.Font.FredokaOne
+ProjectEvo.Text = "ProjectEvo"
+ProjectEvo.TextColor3 = Color3.fromRGB(0, 0, 0)
+ProjectEvo.TextSize = 30.000
+ProjectEvo.TextWrapped = true
+
+HoodModdedFrame.Name = "HoodModdedFrame"
+HoodModdedFrame.Parent = HubFrame
+HoodModdedFrame.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+HoodModdedFrame.BorderSizePixel = 0
+HoodModdedFrame.Position = UDim2.new(0.0500000007, 0, 0.075000003, 0)
+HoodModdedFrame.Size = UDim2.new(0, 541, 0, 275)
+HoodModdedFrame.Visible = false
+
+TextLabel_4.Parent = HoodModdedFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Position = UDim2.new(0.0369685777, 0, 0.0727272704, 0)
+TextLabel_4.Size = UDim2.new(0, 501, 0, 235)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "COMING SOON!!"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+-- Scripts:
+
+local function NLABOF_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	imageLabel.Size = UDim2.new(0, 150, 0, 150)
+end
+coroutine.wrap(NLABOF_fake_script)()
+local function XIOSZVC_fake_script() -- MainFrame_2.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.PhantomForcesFrame.Visible = false
+		script.Parent.Parent.HoodModdedFrame.Visible = false
+	end)
+end
+coroutine.wrap(XIOSZVC_fake_script)()
+local function WDSPZRB_fake_script() -- HoodModded.LocalScript 
+	local script = Instance.new('LocalScript', HoodModded)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.PhantomForcesFrame.Visible = false
+		script.Parent.Parent.HoodModdedFrame.Visible = true
+	end)
+end
+coroutine.wrap(WDSPZRB_fake_script)()
+local function XXRU_fake_script() -- PhantomForces.LocalScript 
+	local script = Instance.new('LocalScript', PhantomForces)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.PhantomForcesFrame.Visible = true
+		script.Parent.Parent.HoodModdedFrame.Visible = false
+	end)
+end
+coroutine.wrap(XXRU_fake_script)()
+local function THVGR_fake_script() -- HubFrame.LocalScript 
+	local script = Instance.new('LocalScript', HubFrame)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "j" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "k" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(THVGR_fake_script)()
+local function UDZCCE_fake_script() -- Ehub.LocalScript 
+	local script = Instance.new('LocalScript', Ehub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://ehub.fun/raw/script.lua"))()
+	end)
+end
+coroutine.wrap(UDZCCE_fake_script)()
+local function XBKICN_fake_script() -- Nexuscc.LocalScript 
+	local script = Instance.new('LocalScript', Nexuscc)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LittleDyingDuck/Nexus.cc-Crack/main/crack.lua"))();
+	end)
+end
+coroutine.wrap(XBKICN_fake_script)()
+local function POLGLTA_fake_script() -- DarkHub.LocalScript 
+	local script = Instance.new('LocalScript', DarkHub)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(POLGLTA_fake_script)()
+local function OGSFTM_fake_script() -- ProjectEvo.LocalScript 
+	local script = Instance.new('LocalScript', ProjectEvo)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+	end)
+end
+coroutine.wrap(OGSFTM_fake_script)()
